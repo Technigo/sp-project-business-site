@@ -1,5 +1,130 @@
 /* After you've linked the CSS file in the HTML,
 this should turn the background blue ;) */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 body {
-  background: blue;
+  background-color: white;
+  margin: 0;
+}
+
+.header {
+  background-image: url('./images/swedes-logo.jpeg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 2em;
+  height: 400px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-media {
+  display: flex;
+  padding-right: 40px;
+}
+
+.social-media img {
+  margin-left: 10px;
+}
+
+h1 {
+  margin: 15px;
+  font-size: 5vw;
+}
+
+.hamburger {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.hamburger-layer {
+  background: rgb(12, 12, 12);
+  height: 3px;
+  width: 25px;
+  margin-bottom: 4px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  font-family: 'Cinzel', sans-serif;
+  font-size: clamp(1rem, 2.2vw, 1.7rem);
+  margin: 0;
+  padding: 10px;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+.nav-menu .subscribe a {
+  color: rgb(96, 11, 100);
+}
+
+.image {
+  width: 100%;
+}
+
+/* Mobile view */
+@media (max-width: 667px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 668px) and (max-width: 1024px) {
+
+  header {
+    margin-top: 10px;
+  }
+
+  header .navbar {
+    margin-top: -10px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1025px) {
+  header {
+    margin-top: 20px;
+  }
+
+  header .navbar {
+    margin-top: -20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }

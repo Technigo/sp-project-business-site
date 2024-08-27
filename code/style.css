@@ -26,7 +26,8 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
+  position: relative;
+  top: -10px;
 }
 
 .nav-menu li a {
@@ -45,6 +46,16 @@ body {
 
 .social-media {
   display: flex;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
 }
 
 .social-media img {
@@ -115,6 +126,24 @@ body {
 
 .image {
   width: 100%;
+}
+
+.description {
+  background-color: #f1f1f1;
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* Mobile view */

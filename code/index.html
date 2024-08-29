@@ -91,14 +91,41 @@
     </div>
   </div>
 
-  <div class="form">
-    <h1>This is a form</h1>
-  </div>
+  <div class="form-container">
+    <div class="form">
+      <form action="/submit-review" method="post">
+        <h2>Submit Your Review</h2>
 
-  <form action="">
-    <input type="text" name="Name">
-    <input type="text" message="Comments">
-  </form>
+        <label for="name">Name (optional):</label><br>
+        <input type="text" name="Name"><br><br>
+
+        <label for="email">Email Address (optional):</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <select name="rating" id="rating" required>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Average</option>
+          <option value="2">2 - Fair</option>
+          <option value="1">1 - Poor</option>
+        </select><br><br>
+
+        <label for="review-text">Your Review:</label><br>
+        <textarea name="review-text" id="review-text" rows="6" cols="50" required></textarea><br><br>
+
+        <label for="favorite-song">Favorite Song/Performance (optional):</label><br>
+        <input type="text" id="favorite-song" name="favorite-song"><br><br>
+
+        <input type="checkbox" id="consent" name="consent">
+        <label for="consent">I consent to having my review published publicly on The Royal Swedes' website and social
+          media
+          channels.</label><br><br>
+
+        <input type="submit" value="Submit Review">
+      </form>
+    </div>
+  </div>
 
 
   <div class="band-photo">

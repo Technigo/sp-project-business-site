@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: white;
@@ -24,9 +31,7 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  padding: 0;
   position: relative;
-  top: -10px;
 }
 
 .nav-menu li a {
@@ -51,7 +56,6 @@ body {
 
 .social-media a {
   display: inline-block;
-  margin: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -121,7 +125,7 @@ body {
   background: rgb(12, 12, 12);
   height: 4px;
   width: 100%;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 .image {
@@ -136,7 +140,7 @@ body {
   height: 60vh;
   overflow: hidden;
   object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(60%)
 }
 
 .image::after {
@@ -146,16 +150,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, rgba(204, 145, 204, 0.5), rgba(75, 0, 130, 0.5));
+  background: linear-gradient(to bottom right, rgba(48, 101, 200, 0.5), rgba(129, 21, 205, 0.5));
   mix-blend-mode: multiply;
   pointer-events: none;
 }
 
 .description {
   display: inline-block;
-  background-color: #d8d0da;
+  background-color: #deceec;
   font-family: 'Cinzel', sans-serif;
-  font-size: 3.3vw;
+  font-size: clamp(20px, 3.3vw, 24px);
   padding: 10px;
   padding-left: 55px;
   padding-right: 55px;
@@ -191,7 +195,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Oswald", sans-serif;
   font-size: clamp(12px, 2vw, 16px);
   background-color: rgba(255, 255, 255, 0.77);
   padding: 20px;
@@ -265,6 +269,10 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+select {
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 .custom-checkbox {
@@ -342,13 +350,14 @@ input[type="submit"]:hover {
 
 .band-photo {
   max-width: 100%;
-  height: auto;
+  max-height: 50%;
 }
 
 .band-photo img {
   width: 100%;
   height: auto;
   display: block;
+  filter: grayscale(25%)
 }
 
 .footer {
@@ -361,7 +370,7 @@ input[type="submit"]:hover {
 
 .social-icon {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-left: 30vw;
   padding-right: 30vw;
   gap: 10px;
@@ -413,7 +422,7 @@ input[type="submit"]:hover {
 }
 
 /* Tablet view */
-@media (min-width: 668px) and (max-width: 1064px) {
+@media (min-width: 668px) and (max-width: 1024px) {
 
   header {
     margin-top: 20px;
@@ -433,7 +442,7 @@ input[type="submit"]:hover {
 }
 
 /* Desktop view */
-@media (min-width: 1065px) {
+@media (min-width: 1025px) {
   header {
     margin-top: 20px;
   }

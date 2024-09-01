@@ -357,7 +357,7 @@ input[type="submit"]:hover {
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(25%)
+  filter: grayscale(55%)
 }
 
 .footer {

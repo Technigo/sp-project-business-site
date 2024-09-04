@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@200..700&display=swap');
 
 * {
   margin: 0;
@@ -41,7 +40,7 @@ body {
   font-family: 'Cinzel', sans-serif;
   font-size: clamp(12px, 2vw, 20px);
   font-weight: bold;
-  transition: color 0.3s, background-color o.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-menu li a:hover {
@@ -197,7 +196,7 @@ body {
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: clamp(12px, 2vw, 16px);
-  background-color: rgba(255, 255, 255, 0.77);
+  background-color: rgba(255, 255, 255, 0.66);
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
@@ -227,7 +226,6 @@ body {
   display: flex;
   justify-content: center;
   background: linear-gradient(135deg, #eddded, #7072c2, #c0bcc0, #8a78ba);
-  /* background-color: #4B003F; */
   padding: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -249,7 +247,7 @@ body {
 
 .form h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   color: #ffffff;
 }
 
@@ -265,7 +263,7 @@ select,
 textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -279,7 +277,7 @@ select {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 8%;
   cursor: pointer;
   font-size: clamp(14px, 2vw, 18px);
   user-select: none;

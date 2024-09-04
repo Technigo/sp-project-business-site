@@ -1,17 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
-    <!-- Don't forget to link the CSS file here! -->
-  </head>
-  <body>
-    <h1>Business name 🌻</h1>
 
-    <!-- Video or image as a header is cool :) -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Royal Swedes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./images/the-royal-swedes-favicon.png">
+</head>
 
-    <!-- Signup form -->
+<body>
+  <header class="header">
+    <div class="top-row">
+      <div class="hamburger">
+        <div class="hamburger-layer"></div>
+        <div class="hamburger-layer"></div>
+        <div class="hamburger-layer"></div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#the-swedes">The Swedes</a></li>
+        <li><a href="#vibes">Vibes</a></li>
+        <li><a href="#review">Review</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="https://www.facebook.com/theroyalswedes" target="_blank">
+          <img src="./images/fb.png">
+        </a>
+        <a href="https://www.instagram.com/theroyalswedes/" target="_blank">
+          <img src="./images/insta.png">
+        </a>
+        <a href="https://www.youtube.com/channel/UCBAikymgmy7C5lQ5EhJT4bw/featured" target="_blank">
+          <img src="./images/youtube.png">
+        </a>
+        <a href="https://www.tiktok.com/@theroyalswedes" target="_blank">
+          <img src="./images/tiktok.png">
+        </a>
+      </div>
 
-  </body>
+    </div>
+    <!-- 3D logo -->
+    <div class="logo-container">
+      <div class="logo-top">
+        <img src="./images/swedes-logo-top.jpeg" alt="logo">
+      </div>
+      <div class="logo-bottom">
+        <img src="./images/swedes-logo-bottom1.jpeg" alt="logo" class="logo">
+      </div>
+    </div>
+  </header>
+
+  <div class="image">
+    <img src="./images/the-royal-swedes-live-3.jpeg">
+  </div>
+
+  <div class="description" id="the-swedes">
+    <br>
+    <p>Hailing from the land of vikings and vibrant melodies, The Royal Swedes blend pop and rock with regal flair.
+      Featuring timeless
+      classics and contemporary hits, they captivate audiences with a sound that is both bold and nostalgic. <br><br>
+      Whether
+      it's
+      reliving the glory days of rock or creating new memories on the dance floor, The Royal Swedes know how to turn
+      any event into a celebration fit for royalty.</p><br>
+  </div>
+
+  <div class="grid-container" id="vibes">
+    <video class="video-bg" autoplay muted loop playsinline>
+      <source src="./video/royal-swedes-live - Made with Clipchamp.mp4" type="video/mp4">
+    </video>
+    <div class="grid-item">
+      <h2>"One of the best groups I have seen in a long time. Their music has a wide variety, they cater for all tastes,
+        and the lead singer has such a brilliant voice."</h2>
+      <p>Linda H.</p>
+    </div>
+    <div class="grid-item">
+      <h2>"The band is so talented and full of energy. They know how to entertain and interact wonderfully with the
+        crowd. 10 out of 10."</h2>
+      <p>Brenda K.</p>
+    </div>
+    <div class="grid-item">
+      <h2>"Kunde spela väldigt blandad musik. Superbra!!!"</h2>
+      <p>Marjo R.</p>
+    </div>
+    <div class="grid-item">
+      <h2>"Definitely worth attending their performance. Powerful, energetic and very talented."</h2>
+      <p>Charles G.</p>
+    </div>
+  </div>
+
+  <div class="form-container" id="review">
+    <div class="form">
+      <form action="https://httpbin.org/anything" method="post">
+        <h2>Submit Your Review</h2>
+
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="Name">
+
+        <label for="email">Email Address (optional):</label>
+        <input type="email" id="email" name="email">
+
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating" required>
+          <option value="5">5 - Viking Victory: Epic performances that make you want to raise your horn and sing along
+          </option>
+          <option value="4">4 - Abba-solutely Delightful: Great energy and catchy tunes that get everyone dancing
+          </option>
+          <option value="3">3 - Smörgåsbord Surprise: A mixed platter of hits and misses</option>
+          <option value="2">2 - IKEA Assembly Required: All the pieces were there, but it felt like a struggle to put it
+            together</option>
+          <option value="1">1 - Melancholy Moose: A slow and somber performance</option>
+        </select>
+
+        <label for="review-text">Your Review:</label>
+        <textarea name="review-text" id="review-text" rows="6" cols="50" required></textarea>
+
+        <label for="favorite-song">Favorite Song/Performance (optional):</label>
+        <input type="text" id="favorite-song" name="favorite-song">
+
+        <label class="custom-checkbox">I consent to having my review published publicly on The Royal Swedes website and
+          social media channels.
+          <input type="checkbox" name="consent">
+          <span class="checkmark"></span>
+        </label>
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+  </div>
+
+
+  <div class="band-photo">
+    <img src="./images/the-royal-swedes-live2.jpeg">
+  </div>
+
+  <footer class="footer">
+    <div class="social-icon">
+      <a href="https://www.facebook.com/theroyalswedes" target="_blank">
+        <img src="./images/fb.png">
+      </a>
+      <a href="https://www.instagram.com/theroyalswedes/" target="_blank">
+        <img src="./images/insta.png">
+      </a>
+      <a href="https://www.youtube.com/channel/UCBAikymgmy7C5lQ5EhJT4bw/featured" target="_blank">
+        <img src="./images/youtube.png">
+      </a>
+      <a href="https://www.tiktok.com/@theroyalswedes" target="_blank">
+        <img src="./images/tiktok.png">
+      </a>
+    </div>
+
+    <div class="copyright">&copy 2024 The Royal Swedes. All rights reserved.</div>
+  </footer>
+
+</body>
+
 </html>

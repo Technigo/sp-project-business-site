@@ -1,6 +1,6 @@
 # Business Site
 
-Netlify link: https://regal-profiterole-ccd400.netlify.app/
+Netlify link: https://stately-gumdrop-a43ec8.netlify.app/
 
 - Brief description of the assignment
 - How you approached the task, what tools and techniques you used, and how you planned it

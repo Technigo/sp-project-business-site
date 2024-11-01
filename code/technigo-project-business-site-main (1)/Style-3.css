@@ -1,0 +1,400 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.background-image {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Reset básico para márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Contenedor del encabezado */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el logotipo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 2px solid #007BFF;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    padding: 40px 40px;
+    font-size: 50px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Header style for bigger screens */
+@media (min-width: 1200px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+}
+
+/* Responsive Styles for medium screens (tablets and larger phones) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+}
+
+/* Responsive Styles for small screens (iPhone SE and smaller) */
+@media (max-width: 767px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* For iPhone 5/SE */
+@media (max-width: 320px) {
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .menu-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu-icon span {
+        height: 2px;
+    }
+}
+
+/* Menu icon (hamburger) */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-links,
+footer .legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 200px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Estilo de cabecera para pantallas grandes */
+@media (min-width: 1200px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+}
+
+/* Responsive Styles for medium screens (tablets and larger phones) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+}
+
+/* Responsive Styles for small screens (iPhone SE and smaller) */
+@media (max-width: 767px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* Estilo para iPhone 5/SE */
+@media (max-width: 320px) {
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .menu-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu-icon span {
+        height: 2px;
+    }
+}
+
+/* Menu icon (hamburger) */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}

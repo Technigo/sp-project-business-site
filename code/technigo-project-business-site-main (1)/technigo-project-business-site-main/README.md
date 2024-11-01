@@ -1,6 +1,6 @@
 # Business Site
 
-Netlify link: https://stately-gumdrop-a43ec8.netlify.app/
+Replace this readme with your own information about the project. You can include things like:
 
 - Brief description of the assignment
 - How you approached the task, what tools and techniques you used, and how you planned it
